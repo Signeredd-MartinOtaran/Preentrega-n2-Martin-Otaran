@@ -1,4 +1,12 @@
-@charset "UTF-8";
+// Variables para personalizar el botón
+$button-size: 60px; // Tamaño del botón
+$button-bg-color: #007bff; // Color de fondo del botón
+$button-text-color: #fff; // Color del texto del botón
+$button-font-size: 24px; // Tamaño del texto del botón
+$plus-symbol-size: 80%; // Tamaño del símbolo "+" en relación con el botón
+
+
+// Estilos generales
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +25,7 @@ body {
 .darkmode {
   display: flex;
   justify-content: flex-end;
-  font-family: "Bungee Spice", cursive;
+  font-family: 'Bungee Spice', cursive;
   margin-top: 20px;
   margin-right: 20px;
 }
@@ -29,9 +37,10 @@ body {
 hr {
   margin-left: 50px;
   margin-right: 50px;
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid rgba( 250, 250, 250, 0.2);
 }
 
+// Estilos para el navbar
 .navbar {
   display: flex;
   justify-content: center; /* Centra horizontalmente el contenido */
@@ -41,7 +50,7 @@ hr {
 }
 
 h2 {
-  font-family: "Bungee Spice", cursive;
+  font-family: 'Bungee Spice', cursive;
 }
 
 nav h2 {
@@ -66,7 +75,7 @@ ul {
 li {
   margin: 15px;
   color: #fff;
-  font-family: "Bungee Spice", cursive;
+  font-family: 'Bungee Spice', cursive;
 }
 
 a {
@@ -74,6 +83,7 @@ a {
   text-decoration: none;
 }
 
+// Estilos para el logotipo en el navbar (si lo tienes)
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -114,7 +124,7 @@ nav a li:hover {
 
 .main-title {
   font-size: 28px;
-  font-family: "Bungee Spice", cursive;
+  font-family: 'Bungee Spice', cursive;
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -130,7 +140,7 @@ nav a li:hover {
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 20px;
-  font-family: "Bungee Spice", cursive;
+  font-family: 'Bungee Spice', cursive;
   color: #ccc;
 }
 
@@ -307,13 +317,13 @@ form {
   align-items: center;
 }
 
-input[type=email] {
+input[type="email"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
 }
 
-button[type=submit] {
+button[type="submit"] {
   background-color: #007bff; /* Color azul similar al botón "Fondos" */
   color: #fff;
   border: none;
@@ -323,9 +333,10 @@ button[type=submit] {
   border-radius: 5px; /* Bordes redondeados */
 }
 
-button[type=submit]:hover {
+button[type="submit"]:hover {
   background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
 }
+
 
 .community {
   background-color: rgba(255, 255, 255, 0.1);
@@ -333,36 +344,41 @@ button[type=submit]:hover {
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
-}
-.community h1 {
-  font-size: 28px;
-  font-family: "Bungee Spice", cursive;
-  margin-bottom: 20px;
-}
-.community .paragraph {
-  font-size: 16px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-family: "Bungee Spice", cursive;
-  color: #ccc;
-}
-.community .forum {
-  font-size: 20px;
-  font-family: "Bungee Spice", cursive;
-  margin-bottom: 10px;
-}
-.community button[type=submit] {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-.community button[type=submit]:hover {
-  background-color: #0056b3;
+
+  h1 {
+    font-size: 28px;
+    font-family: 'Bungee Spice', cursive;
+    margin-bottom: 20px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Bungee Spice', cursive;
+    color: #ccc;
+  }
+
+  .forum {
+    font-size: 20px;
+    font-family: 'Bungee Spice', cursive;
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
 }
 
 footer {
@@ -386,44 +402,42 @@ footer i {
 
 @media (max-width: 920px) {
   .responsive-button {
-    font-size: 14px;
+      font-size: 14px;
   }
+
   .menu ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #333;
-    width: 100%;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
   }
+
   .menu.active ul {
-    display: flex;
+      display: flex;
   }
+
   .hamburger-menu {
-    display: block;
+      display: block;
   }
+
   .products {
     grid-template-columns: repeat(2, 1fr); /* Muestra dos columnas con igual ancho */
     gap: 10px; /* Ajusta el espacio entre las tarjetas a 10px */
     padding: 10px;
   }
+
   .product-card {
     width: 100%; /* Ancho completo para ocupar toda la columna */
   }
-  
-  .container-us {
-    flex-direction: column;
-  }
-  .map,
-  .content {
-    width: 100%;
-    margin-right: 0;
-  }
-
 }
+
 /* CSS base sin animaciones */
+
 /* ... Tu CSS base sin animaciones aquí ... */
+
 /* Animación fadeIn */
 @keyframes fadeIn {
   from {
@@ -433,6 +447,7 @@ footer i {
     opacity: 1;
   }
 }
+
 /* Animación scaleIn */
 @keyframes scaleIn {
   from {
@@ -442,6 +457,7 @@ footer i {
     transform: scale(1);
   }
 }
+
 /* Animación slideUp */
 @keyframes slideUp {
   from {
@@ -451,6 +467,7 @@ footer i {
     transform: translateY(0);
   }
 }
+
 /* Animación fadeInOut */
 @keyframes fadeInOut {
   0%, 100% {
@@ -460,6 +477,7 @@ footer i {
     opacity: 1;
   }
 }
+
 /* Animación rotate360 */
 @keyframes rotate360 {
   from {
@@ -469,6 +487,7 @@ footer i {
     transform: rotate(360deg);
   }
 }
+
 /* Animación slideUpLoad */
 @keyframes slideUpLoad {
   from {
@@ -480,7 +499,9 @@ footer i {
     transform: translateY(0);
   }
 }
+
 /* Aplicar animaciones a elementos específicos en tu HTML */
+
 .main-title {
   animation: fadeIn 1s ease-in-out;
 }
@@ -489,13 +510,16 @@ footer i {
   animation: scaleIn 1s ease-in-out;
 }
 
+
 .menu a li:hover {
   animation: fadeInOut 1s ease-in-out;
 }
 
 .bar.active {
-  animation: rotate360 2s linear;
+  animation: rotate360 2s linear
 }
+
+
 
 .product-card {
   border: 1px solid #ccc;
@@ -509,23 +533,24 @@ footer i {
   transform: scale(1.05); /* Hace zoom en la tarjeta al pasar el mouse */
 }
 
+
+
 .round-button {
-  width: 60px;
-  height: 60px;
+  width: $button-size;
+  height: $button-size;
   border-radius: 50%;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 24px;
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  font-size: $button-font-size;
   border: none;
   cursor: pointer;
   position: relative;
-}
-.round-button::before {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(80%);
-}
 
-/*# sourceMappingURL=style.css.map */
+  &::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale($plus-symbol-size); // Ajusta el tamaño del símbolo "+" y el centrado
+  }
+}
