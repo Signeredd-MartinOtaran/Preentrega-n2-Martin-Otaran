@@ -34,8 +34,8 @@ hr {
 
 .navbar {
   display: flex;
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center;
+  align-items: center;
   color: #fff;
   padding: 10px 20px;
 }
@@ -72,12 +72,6 @@ li {
 a {
   font-style: none;
   text-decoration: none;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0; /* Ajusta el margen si es necesario */
 }
 
 .menu ul {
@@ -179,7 +173,7 @@ nav a li:hover {
 }
 
 .product-image {
-  height: 250px; /* Ajusta la altura de la imagen */
+  height: 250px;
   background-size: cover;
   background-position: center;
 }
@@ -266,16 +260,16 @@ nav a li:hover {
 .container-us {
   display: flex;
   max-width: 1200px; /* Ajusta el ancho máximo de la página según tus necesidades */
-  margin: 0 auto; /* Centra el contenido en la pantalla */
+  margin: 0 auto;
   padding: 20px;
 }
 
 .map {
-  background-color: white; /* Fondo blanco para el mapa */
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
   flex: 0 0 calc(50% + 60px); /* Tamaño fijo para el mapa (50% del contenedor + 60px) */
-  margin-right: 20px; /* Espacio a la derecha del mapa */
+  margin-right: 20px;
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -286,21 +280,20 @@ nav a li:hover {
 }
 
 .lorem {
-  background-color: white; /* Fondo blanco para el párrafo "Lorem" */
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 20px; /* Agrega espacio entre el párrafo y la información de contacto */
+  margin-bottom: 20px;
   background: rgba(255, 255, 255, 0.2);
 }
 
 .contact-info {
-  background-color: white; /* Fondo blanco para la información de contacto */
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Estilos del formulario de suscripción */
 form {
   display: flex;
   flex-direction: column;
@@ -314,17 +307,17 @@ input[type=email] {
 }
 
 button[type=submit] {
-  background-color: #007bff; /* Color azul similar al botón "Fondos" */
+  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  font-weight: bold; /* Texto en negrita */
-  border-radius: 5px; /* Bordes redondeados */
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 button[type=submit]:hover {
-  background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+  background-color: #0056b3;
 }
 
 .community {
@@ -405,26 +398,15 @@ footer i {
   }
   .products {
     grid-template-columns: repeat(2, 1fr); /* Muestra dos columnas con igual ancho */
-    gap: 10px; /* Ajusta el espacio entre las tarjetas a 10px */
+    gap: 10px;
     padding: 10px;
   }
   .product-card {
-    width: 100%; /* Ancho completo para ocupar toda la columna */
+    width: 100%; 
   }
-  
-  .container-us {
-    flex-direction: column;
-  }
-  .map,
-  .content {
-    width: 100%;
-    margin-right: 0;
-  }
-
 }
-/* CSS base sin animaciones */
-/* ... Tu CSS base sin animaciones aquí ... */
-/* Animación fadeIn */
+
+/*animacion fadein*/
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -502,7 +484,7 @@ footer i {
   border-radius: 5px;
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s ease; /* Agrega una transición suave a la propiedad de transformación */
+  transition: transform 0.3s ease;
 }
 
 .product-card:hover {
@@ -527,5 +509,3 @@ footer i {
   left: 50%;
   transform: translate(-50%, -50%) scale(80%);
 }
-
-/*# sourceMappingURL=style.css.map */
