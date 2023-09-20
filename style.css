@@ -25,8 +25,7 @@ body {
 #hr1 {
   margin-top: 50px;
 }
-
-hr {
+#hr1 hr {
   margin-left: 50px;
   margin-right: 50px;
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -39,8 +38,7 @@ hr {
   color: #fff;
   padding: 10px 20px;
 }
-
-h2 {
+.navbar h2 {
   font-family: "Bungee Spice", cursive;
 }
 
@@ -62,14 +60,12 @@ ul {
   padding: 10px;
   margin-right: 60px;
 }
-
-li {
+ul li {
   margin: 15px;
   color: #fff;
   font-family: "Bungee Spice", cursive;
 }
-
-a {
+ul li a {
   font-style: none;
   text-decoration: none;
 }
@@ -79,25 +75,18 @@ a {
   padding: 0;
   display: flex;
 }
-
-.hamburger-menu {
+.menu ul .hamburger-menu {
   display: none;
   cursor: pointer;
 }
-
-.bar {
+.menu ul .bar {
   width: 25px;
   height: 3px;
   background-color: #fff;
   margin: 4px 0;
 }
-
-nav a li:hover {
+.menu ul nav a li:hover {
   color: blueviolet;
-}
-
-.altura {
-  height: 100vh;
 }
 
 .content {
@@ -105,30 +94,26 @@ nav a li:hover {
   padding: 50px;
   height: 60vh;
 }
-
-.main-title {
+.content .main-title {
   font-size: 28px;
   font-family: "Bungee Spice", cursive;
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
-.separator {
+.content .separator {
   width: 250px;
   margin: 20px auto;
   border: 1px solid;
   border-top: 2px solid #ff9100;
 }
-
-.paragraph {
+.content .paragraph {
   font-size: 16px;
   margin-top: 10px;
   margin-bottom: 20px;
   font-family: "Bungee Spice", cursive;
   color: #ccc;
 }
-
-.main-button {
+.content .main-button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #d47f00;
@@ -137,16 +122,13 @@ nav a li:hover {
   border-radius: 5px;
   cursor: pointer;
 }
-
-.main-button:hover {
+.content .main-button:hover {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-.center-container {
+.content .center-container {
   text-align: center;
 }
-
-.responsive-button {
+.content .center-container .responsive-button {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
@@ -159,26 +141,23 @@ nav a li:hover {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta el tamaño mínimo */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
   gap: 20px;
   padding: 20px;
 }
-
-.product-card {
+.products .product-card {
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
 }
-
-.product-image {
+.products .product-card .product-image {
   height: 250px;
   background-size: cover;
   background-position: center;
 }
-
-.product-content {
+.products .product-card .product-content {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -186,8 +165,7 @@ nav a li:hover {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-
-.product-button {
+.products .product-card .product-button {
   display: block;
   margin: 10px auto 0;
   padding: 10px 20px;
@@ -220,35 +198,29 @@ nav a li:hover {
   margin-left: 50px;
   background: rgba(255, 255, 255, 0.2);
 }
-
 .card-form h4 {
   font-size: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-.controls {
+.card-form .controls {
   background-color: #222;
   border: 1px solid white;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 16px;
 }
-
 .card-form a {
   text-decoration: none;
   color: #222;
 }
-
 .card-form a:hover {
   text-decoration: underline;
 }
-
 .card-form p {
   height: 50px;
 }
-
-#boton {
+.card-form #boton {
   background: #fff;
   width: 150px;
   margin-bottom: 10px;
@@ -259,35 +231,31 @@ nav a li:hover {
 
 .container-us {
   display: flex;
-  max-width: 1200px; /* Ajusta el ancho máximo de la página según tus necesidades */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
-
-.map {
+.container-us .map {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  flex: 0 0 calc(50% + 60px); /* Tamaño fijo para el mapa (50% del contenedor + 60px) */
+  flex: 0 0 calc(50% + 60px);
   margin-right: 20px;
   background: rgba(255, 255, 255, 0.2);
 }
-
-.content {
+.container-us .content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
-
-.lorem {
+.container-us .content .lorem {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
   background: rgba(255, 255, 255, 0.2);
 }
-
-.contact-info {
+.container-us .content .contact-info {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -299,14 +267,12 @@ form {
   flex-direction: column;
   align-items: center;
 }
-
-input[type=email] {
+form input[type=email] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
 }
-
-button[type=submit] {
+form button[type=submit] {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -315,8 +281,7 @@ button[type=submit] {
   font-weight: bold;
   border-radius: 5px;
 }
-
-button[type=submit]:hover {
+form button[type=submit]:hover {
   background-color: #0056b3;
 }
 
@@ -366,11 +331,9 @@ footer {
   padding: 20px;
   margin-top: 250px;
 }
-
 footer p {
   margin-bottom: 20px;
 }
-
 footer i {
   color: #9101e4;
   font-size: 50px;
@@ -397,15 +360,15 @@ footer i {
     display: block;
   }
   .products {
-    grid-template-columns: repeat(2, 1fr); /* Muestra dos columnas con igual ancho */
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
   }
-  .product-card {
-    width: 100%; 
+  .products .product-card {
+    width: 100%;
   }
 }
-
+/* Variables para animaciones */
 /*animacion fadein*/
 @keyframes fadeIn {
   from {
@@ -462,7 +425,6 @@ footer i {
     transform: translateY(0);
   }
 }
-/* Aplicar animaciones a elementos específicos en tu HTML */
 .main-title {
   animation: fadeIn 1s ease-in-out;
 }
@@ -486,7 +448,6 @@ footer i {
   position: relative;
   transition: transform 0.3s ease;
 }
-
 .product-card:hover {
   transform: scale(1.05); /* Hace zoom en la tarjeta al pasar el mouse */
 }
@@ -509,3 +470,5 @@ footer i {
   left: 50%;
   transform: translate(-50%, -50%) scale(80%);
 }
+
+/*# sourceMappingURL=style.css.map */
